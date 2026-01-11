@@ -1,7 +1,7 @@
 # Urban Routes – Manual QA Testing Project
 
 ## Project Overview
-Urban Routes is a web application designed to help users calculate routes between locations using different transportation options such as walking, bus, taxi, and car sharing.
+Urban Routes is a web application designed to help users calculate routes between locations using different transportation options such as car, walking, bus, taxi, bicycle, scooter and car sharing.
 
 This project focuses on manual testing of the **Car Sharing** feature, validating both UI requirements and functional behavior based on business rules.
 
