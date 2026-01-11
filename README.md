@@ -8,9 +8,9 @@ This repository contains practical QA testing artifacts focused on manual and AP
 
 - Test design techniques (equivalence classes, boundary       value analysis)
 
-- Documentation aligned with Agile QA workflows
+- Documentation aligned with Agile QA workflows and structured testing processes
 
-Tools
+Tools & Technologies
 - Postman
 - Jira
 - Google Sheets
