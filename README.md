@@ -10,7 +10,7 @@ This repository contains practical QA testing artifacts focused on manual and AP
 
 - Documentation aligned with Agile QA workflows
 
-Herramientas
+Tools
 - Postman
 - Jira
 - Google Sheets
