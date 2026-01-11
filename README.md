@@ -1,4 +1,4 @@
-QA Testing Portafolio - Manual & API Testing
+# QA Testing Portafolio - Manual & API Testing
 
 This repository contains practical QA testing artifacts focused on manual and API testing, showcasing test design techniques, test execution, and defect reporting aligned with real-world QA processes.
 
@@ -10,7 +10,7 @@ This repository contains practical QA testing artifacts focused on manual and AP
 
 - Documentation aligned with Agile QA workflows and structured testing processes
 
-Tools & Technologies
+## Tools & Technologies
 - Postman
 - Jira
 - Google Sheets
