@@ -1,5 +1,5 @@
 # Car Sharing cancellation modal does not close when clicking "x" during free waiting time
-Environment
+## Environment
 - Browser: Google Chrome / Firefox
 - Resolution: 800x600, 1920x1080
 Priority High
