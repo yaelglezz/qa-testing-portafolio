@@ -11,8 +11,6 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The map is displayed on the right side of the application
 - The **“Reserve”** button is located in the bottom-left corner of the screen
 
----
-
 ## Address Fields
 
 - The **“From”** field is empty by default
@@ -22,8 +20,6 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The **“To”** placeholder is displayed correctly when the field is empty
 - When typing in the **“To”** field, the label remains visible and the user input is displayed correctly
 
----
-
 ## Map and Route
 
 - When valid addresses are entered in the **“From”** and **“To”** fields, a route is generated on the map
@@ -32,8 +28,6 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The route is displayed in blue
 - The map automatically zooms to fit the generated route
 
----
-
 ## Travel Options
 
 - Travel options are enabled once a valid route is generated
@@ -41,8 +35,6 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The selected option is highlighted with a gray indicator
 - The text of the selected option changes to white
 - The **“Optimal”**, **“Flash”**, and **“Personal”** options do not contain spelling errors
-
----
 
 ## Transportation Types
 
@@ -53,16 +45,12 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The **Scooter** option is displayed
 - The **Shared Car** option is displayed
 
----
-
 ## Trip Information
 
 - The exact trip price is displayed correctly
 - The estimated trip duration is displayed correctly
 - Price information, trip duration, and the **“Reserve”** button are displayed below the travel modes
 - When clicking the **“Reserve”** button, the order form is displayed
-
----
 
 ## Reservation Form
 
@@ -73,8 +61,6 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The **“Add driver’s license”** field is empty by default
 - The **“Payment method”** field is empty by default
 - If no bank card is added, the **“Add”** option is displayed instead of **“Card”**
-
----
 
 ## Vehicle Selection
 
@@ -88,8 +74,6 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - When selecting a vehicle, its icon becomes larger
 - When selecting a vehicle, a black label with the vehicle brand is displayed
 - The selected vehicle information is updated in the left panel
-
----
 
 ## Reservation Confirmation
 
