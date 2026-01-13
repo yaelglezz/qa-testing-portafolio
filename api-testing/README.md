@@ -1,7 +1,7 @@
 
 # API Testing – Urban Grocers
 
-## Overview
+## 📌 Project Overview
 
 This section contains API testing artifacts created for the **Urban Grocers** project, an online grocery platform where users can create custom shopping kits or purchase predefined ones.
 
@@ -11,7 +11,7 @@ All API responses were returned and validated in **JSON format**
 
 ---
 
-## Scope of Testing
+## 🔍 Scope of Testing
 
 The API testing focused on validating:
 
@@ -23,7 +23,7 @@ The API testing focused on validating:
 
 ---
 
-## Test Design Techniques Applied
+## 📄 Test Design Techniques Applied
 
 - Positive and Negative Test Cases
 - Equivalence Classes
@@ -40,7 +40,7 @@ The following elements were explicitly validated:
 
 ---
 
-## API Response Validation
+## 📝 API Response Validation
 
 For each request, the following aspects were validated:
 
@@ -51,7 +51,7 @@ For each request, the following aspects were validated:
 
 ---
 
-## Expected Error Handling (Negative Scenarios)
+## ❌ Expected Error Handling (Negative Scenarios)
 
 The API was expected to return the following responses in negative cases:
 
@@ -67,11 +67,12 @@ The API was expected to return the following responses in negative cases:
   {
     "message": "No more than 30 items per kit"
   }
-When exceeding the maximum limit of 30 unique products per kit
+  ```
+  When exceeding the maximum limit of 30 unique products per kit
 
 ---
 
-## Test Execution & Defect Reporting
+## 🐞 Test Execution & Defect Reporting
 
 - Test cases were executed using **Postman**
 - API responses were validated based on:
@@ -85,7 +86,7 @@ When exceeding the maximum limit of 30 unique products per kit
 
 ---
 
-## Tools Used
+## 🛠 Tools Used
 
 - **Postman** - API request execution and JSON validation
 - **Jira** - Defect tracking and reporting
