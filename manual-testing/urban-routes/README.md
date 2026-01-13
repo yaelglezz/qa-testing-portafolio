@@ -40,6 +40,6 @@ This project focuses on manual testing of the **Car Sharing** feature, validatin
 
 --- 
 
-## 🔍 Key QA Focus
+## 🎯 Key QA Focus
 This project demonstrates structured manual testing practices, UI validation against design requirements, and defect reporting using Jira within a QA workflow aligned with real-world Agile environments.
 
