@@ -5,11 +5,15 @@ This checklist was created to validate the UI design and functional behavior of 
 
 The checklist covers layout consistency, form behavior, map interaction, travel options, vehicle selection, and reservation confirmation elements. It was executed through manual testing in multiple browsers, and any deviations from the expected behavior were reported and tracked in Jira.
 
+---
+
 ## Layout
 
 - The **Urban Routes** logo is displayed in the top-left corner
 - The map is displayed on the right side of the application
 - The **“Reserve”** button is located in the bottom-left corner of the screen
+
+---
 
 ## Address Fields
 
@@ -20,6 +24,8 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The **“To”** placeholder is displayed correctly when the field is empty
 - When typing in the **“To”** field, the label remains visible and the user input is displayed correctly
 
+---
+
 ## Map and Route
 
 - When valid addresses are entered in the **“From”** and **“To”** fields, a route is generated on the map
@@ -28,6 +34,8 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The route is displayed in blue
 - The map automatically zooms to fit the generated route
 
+---
+
 ## Travel Options
 
 - Travel options are enabled once a valid route is generated
@@ -35,6 +43,8 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The selected option is highlighted with a gray indicator
 - The text of the selected option changes to white
 - The **“Optimal”**, **“Flash”**, and **“Personal”** options do not contain spelling errors
+
+---
 
 ## Transportation Types
 
@@ -45,12 +55,16 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The **Scooter** option is displayed
 - The **Shared Car** option is displayed
 
+---
+
 ## Trip Information
 
 - The exact trip price is displayed correctly
 - The estimated trip duration is displayed correctly
 - Price information, trip duration, and the **“Reserve”** button are displayed below the travel modes
 - When clicking the **“Reserve”** button, the order form is displayed
+
+---
 
 ## Reservation Form
 
@@ -61,6 +75,8 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - The **“Add driver’s license”** field is empty by default
 - The **“Payment method”** field is empty by default
 - If no bank card is added, the **“Add”** option is displayed instead of **“Card”**
+
+---
 
 ## Vehicle Selection
 
@@ -74,6 +90,8 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
 - When selecting a vehicle, its icon becomes larger
 - When selecting a vehicle, a black label with the vehicle brand is displayed
 - The selected vehicle information is updated in the left panel
+
+---
 
 ## Reservation Confirmation
 
@@ -96,6 +114,3 @@ The checklist was executed on the following environments:
 - Mozilla Firefox
 
 Some checklist items did not pass due to deviations from the specified UI and functional requirements. All failed validations were documented and reported as bugs in Jira to ensure proper tracking and follow-up.
-
-
-
