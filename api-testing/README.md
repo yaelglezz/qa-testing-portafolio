@@ -65,7 +65,7 @@ The API was expected to return the following responses in negative cases:
 - **400 Bad Request** with the following error message:
   ```json
   {
-    "message": "No more than 30 items per kit"
+    "message": "No más de 30 artículos por conjunto"
   }
   ```
   When exceeding the maximum limit of 30 unique products per kit
@@ -90,4 +90,4 @@ The API was expected to return the following responses in negative cases:
 
 - **Postman** - API request execution and JSON validation
 - **Jira** - Defect tracking and reporting
-- **Google Sheets** - Test case design and execution tracking
+- **Google Sheets** - Test case design and tracking
