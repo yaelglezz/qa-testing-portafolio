@@ -85,5 +85,6 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
   - Vehicle location
   - Trip price
   - Free waiting time countdown
+  - The **"X"** button to cancel is at the top center
 
 
