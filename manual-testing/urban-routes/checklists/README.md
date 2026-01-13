@@ -86,5 +86,16 @@ The checklist covers layout consistency, form behavior, map interaction, travel 
   - Trip price
   - Free waiting time countdown
   - The **"X"** button to cancel is at the top center
+ 
+---
+
+## Test Execution Notes
+
+The checklist was executed on the following environments:
+- Google Chrome
+- Mozilla Firefox
+
+Some checklist items did not pass due to deviations from the specified UI and functional requirements. All failed validations were documented and reported as bugs in Jira to ensure proper tracking and follow-up.
+
 
 
