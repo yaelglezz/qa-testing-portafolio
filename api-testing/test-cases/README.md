@@ -88,7 +88,44 @@ Examples:
 
 - **Expected:**
 ```json
-{
-  "message": "No más de 30 artículos por conjunto"
-}
+  {
+    "message": "No más de 30 artículos por conjunto"
+  }
+```
+- HTTP status code: 400n Bad Request
 
+---
+
+## 🐞 Bug Reporting
+
+Any test case that produced:
+- An unexpected success response
+- An incorrect error response
+was reported in Jira, including:
+- Steps to reproduce
+- Expected vs actual results
+- Environment details
+- Evidence when applicable
+Links to Jira tickets are included directly in the test cases.
+
+---
+
+## 🛠 Tools Used
+
+- Postman – API request execution
+- Jira – Bug tracking and reporting
+- GitHub – Test documentation and version control
+
+---
+
+## 📁 Related Resources
+
+- Postman Collection:
+  `api-testing/postman-collections/urban-grocers.postman_collection.json`
+
+---
+
+## 📌 Notes
+
+- All API responses were validated in JSON format
+- Testing focused on backend validation, independent of UI beha
