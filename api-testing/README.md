@@ -7,6 +7,8 @@ This section contains API testing artifacts created for the **Urban Grocers** pr
 
 The main objective of this project was to **design, execute, and validate API test cases** for the functionality of **adding products to a kit**, covering both **positive and negative scenarios**, and ensuring correct backend behavior according to business rules and technical specifications.
 
+All API responses were returned and validated in **JSON format**
+
 ---
 
 ## Scope of Testing
@@ -38,6 +40,17 @@ The following elements were explicitly validated:
 
 ---
 
+## API Response Validation
+
+For each request, the following aspects were validated:
+
+- HTTP status code
+- JSON response body structure
+- Presence and correctness of response fields
+- Error messages returned by the API in negative scenarios
+
+---
+
 ## Expected Error Handling (Negative Scenarios)
 
 The API was expected to return the following responses in negative cases:
@@ -54,3 +67,26 @@ The API was expected to return the following responses in negative cases:
   {
     "message": "No more than 30 items per kit"
   }
+When exceeding the maximum limit of 30 unique products per kit
+
+---
+
+## Test Execution & Defect Reporting
+
+- Test cases were executed using **Postman**
+- API responses were validated based on:
+  - HTTP status codes
+  - JSON response body
+  - Business logic enforcement
+- Any discrepancies where:
+  - A negative test returned a positive response, or
+  - An unexpected response was returned
+    were **reported as defects in Jira**, including reproduction steps and supporting evidence
+
+---
+
+## Tools Used
+
+- **Postman** - API request execution and JSON validation
+- **Jira** - Defect tracking and reporting
+- **Google Sheets** - Test case design and execution tracking
