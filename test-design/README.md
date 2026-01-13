@@ -1,79 +1,91 @@
-# Test Design – Urban Grocers API
+# Test Design
 
 ## 📌 Overview
 
-This section documents the **test design process** applied during API testing for the **Urban Grocers** project.
+This section contains test design artifacts created as part of my QA training and practice.  
+The goal of this folder is to demonstrate how **test design techniques** are applied to ensure effective test coverage, reduce redundancy, and identify edge cases in both **UI** and **API** testing.
 
-The goal of this folder is to demonstrate how test cases were **systematically designed** using formal QA techniques before execution, ensuring proper coverage of business rules, validations, and edge cases related to adding products to shopping kits.
-
----
-
-## 🎯 Purpose of Test Design
-
-Test design was used to:
-- Identify valid and invalid input scenarios
-- Reduce redundant test cases while maintaining coverage
-- Validate backend constraints and business rules
-- Detect edge cases that could lead to unexpected API behavior
-
-These techniques were applied **before executing requests in Postman**.
+The test design techniques documented here were applied to real practice projects:
+- **Urban Routes** (Web / Manual Testing)
+- **Urban Grocers** (API Testing)
 
 ---
 
-## 🧠 Test Design Techniques Applied
+## 🎯 Test Design Techniques Applied
 
-The following techniques were used:
+The following techniques were used to design structured and effective test cases:
 
-### 1️⃣ Equivalence Classes
-Used to group input data into **valid and invalid categories**, allowing efficient test coverage without testing every possible value.
+### 🔹 Equivalence Classes
+Used to divide input data into valid and invalid groups that are expected to behave similarly, allowing test coverage with fewer but more meaningful test cases.
 
-Examples:
-- Valid vs invalid Kit IDs
-- Existing vs non-existing Product IDs
-- Valid vs invalid `quantity` values
-- Correct vs incorrect request body structure
-
-📂 See details in:
-   *test-design/equivalence-classes/*
+### 🔹 Boundary Value Analysis
+Used to validate system behavior at the limits of acceptable input values, where defects are more likely to occur.
 
 ---
 
-### 2️⃣ Boundary Value Analysis
-Used to test **edge values** around defined limits, especially where business constraints exist.
+## 🧪 Application by Project
 
-Examples:
-- Minimum and maximum allowed values for `quantity`
-- Limits on Kit IDs and Product IDs
-- Maximum limit of **30 unique products per kit**
+### 🚗 Urban Routes (Web Application)
 
-📂 See details in:
-   *test-design/boundary-values/*
+Test design techniques were applied to:
+- Form input validation (origin and destination fields)
+- UI behavior and interaction flows
+- Functional restrictions when required fields are missing or invalid
+
+Techniques used:
+- Equivalence Classes
+- Boundary Value Analysis
+
+Artifacts related to this project can be found in:
+- `manual-testing/`
+- `test-design/equivalence-classes/`
+- `test-design/boundary-values/`
 
 ---
 
-## 🔗 Relationship with Test Cases
+### 🛒 Urban Grocers (API)
 
-- Test cases documented in `api-testing/test-cases/` were derived from:
-  - Equivalence Classes
-  - Boundary Value Analysis
-- This ensures that test execution is:
-  - Traceable
-  - Structured
-  - Based on QA best practices, not ad-hoc testing
+Test design techniques were applied to API endpoints related to **adding products to shopping kits**, focusing on:
+
+- Kit ID validation
+- Product ID validation
+- `quantity` field validation
+- Structure and limits of the `productsList` array
+- Business rule enforcing a maximum of **30 unique products per kit**
+
+Techniques used:
+- Equivalence Classes
+- Boundary Value Analysis
+- Positive and Negative test scenarios
+
+Artifacts related to this project can be found in:
+- `api-testing/`
+- `test-design/equivalence-classes/`
+- `test-design/boundary-values/`
+
+---
+
+## 📂 Folder Structure
+
+- `equivalence-classes/`  
+  Contains documentation and examples of equivalence class partitioning applied to both UI and API scenarios.
+
+- `boundary-values/`  
+  Contains boundary value analysis applied to critical input fields and business limits.
 
 ---
 
 ## 🛠 Tools Used
 
-- Test design documentation: Google Sheets
-- Test execution: Postman
-- Defect tracking: Jira
+- Google Sheets – Test design documentation
+- Postman – API validation
+- Jira – Defect reporting and tracking
 
 ---
 
-## ✅ Why This Matters
+## ✅ Key QA Focus
 
-This folder demonstrates:
-- Understanding of **formal test design techniques**
-- Ability to design tests **before execution**
-- Alignment with real-world QA processes used in professional teams
+- Designing tests before execution
+- Improving test coverage with fewer but effective cases
+- Identifying edge cases and negative scenarios
+- Applying test design techniques aligned with real QA workflows
