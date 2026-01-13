@@ -35,7 +35,7 @@ The "Car Reserved" modal closes successfully and the user from canceling the res
 
 ---
 ## Priority
-High
+🔼 High
 
 ---
 
