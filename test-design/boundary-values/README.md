@@ -1,96 +1,88 @@
-
-# Boundary Value Analysis
+# Boundary Value Analysis (BVA)
 
 ## 📌 Overview
 
-This folder contains artifacts created using **Boundary Value Analysis (BVA)** as a test design technique.  
-The objective is to validate system behavior at the **edges of allowed input ranges**, where defects are more likely to occur.
+This section documents the application of **Boundary Value Analysis (BVA)** as a test design technique across two projects:
 
-Boundary Value Analysis was applied to both **web UI** and **API** testing scenarios to improve coverage and detect edge-case defects efficiently.
+- **Urban Routes** (Web Application)
+- **Urban Grocers** (REST API)
 
----
-
-## 🎯 Why Boundary Value Analysis
-
-Boundary Value Analysis helps to:
-- Detect defects at minimum and maximum limits
-- Validate business rules and constraints
-- Reduce redundant test cases while maintaining strong coverage
-- Identify unexpected system behavior at edge conditions
+Boundary Value Analysis was used to validate system behavior at the **edges of allowed input ranges**, where defects are more likely to occur.
 
 ---
 
-## 🧪 Application by Project
+## 🎯 Purpose of Boundary Testing
 
-### 🚗 Urban Routes (Web Application)
+Boundary testing helps ensure that the system:
 
-Boundary values were considered for:
-- Required form fields (empty vs filled states)
-- Input behavior before and after required fields are completed
-- UI state changes when reaching valid/invalid input conditions
-
-Examples:
-- Empty input vs first valid character
-- Transition from invalid to valid form state
-- UI behavior when mandatory fields are just completed
+- Correctly accepts **valid boundary values**
+- Properly rejects **invalid values outside defined limits**
+- Enforces business rules and data validation consistently
+- Handles edge cases without unexpected behavior
 
 ---
 
-### 🛒 Urban Grocers (API)
+## 🧪 Projects Covered
 
-Boundary Value Analysis was applied to API endpoints related to **adding products to shopping kits**, focusing on:
+### 🚗 Urban Routes – Web Application
 
-- `quantity` field values:
-  - Minimum allowed value
-  - Maximum allowed value
-  - Values just outside valid limits
-- Number of unique products per kit:
-  - Maximum allowed: **30**
-  - Boundary scenarios:
-    - 29 products
-    - 30 products
-    - 31 products (invalid)
-- Request body structure limits:
-  - Empty arrays
-  - Single-element arrays
-  - Arrays exceeding allowed limits
+Boundary values were analyzed for:
 
----
+#### ⏰ Time-Based Pricing (Shared Car / Taxi)
 
-## 📝 Test Design Artifacts
+The system behavior (travel cost and duration) was validated across time boundaries where pricing rules change:
 
-The boundary value scenarios documented in this folder include:
-- Valid boundary cases
-- Invalid boundary cases
-- Expected API responses (status codes and error messages)
-- Alignment with backend business rules
+- 18:01 – 22:00  
+- 22:01 – 00:00  
+- 00:01 – 08:00  
+- 08:01 – 12:00  
+- 12:01 – 18:00  
 
-All test cases were designed before execution and later validated during API testing.
+These tests ensured that:
+- Pricing logic switches correctly at boundary times
+- No gaps or overlaps exist between time ranges
+- Costs and durations update according to business rules
 
 ---
 
-## 🐞 Defect Detection
+#### 💳 Payment Method Form – Input Validation
 
-When boundary conditions resulted in:
-- Unexpected positive responses
-- Incorrect error codes
-- Missing or incorrect validation
+Boundary values were tested for the **“Add Payment Method”** form to validate frontend input rules:
 
-The issues were **reported and tracked in Jira**, including detailed reproduction steps and evidence.
+**Card Number field**
+- Exact boundary: 12 digits (valid)
+- Lower boundary: 11 digits (invalid)
+- Upper boundary: 13 digits (invalid)
+- Non-numeric characters (invalid)
+
+**Security Code field**
+- Exact boundary: 2 digits (valid)
+- Lower boundary: 1 digit (invalid)
+- Upper boundary: 3 digits (invalid)
+- Non-numeric characters (invalid)
+
+Additional validation:
+- The **“Add”** button remains disabled when one or both fields are empty
+- The button is enabled only when both fields contain valid boundary values
 
 ---
 
-## 🛠 Tools Used
+### 🛒 Urban Grocers – API
 
-- Google Sheets – Boundary value documentation
-- Postman – API execution and response validation
-- Jira – Defect tracking
+Boundary Value Analysis was applied to API inputs when adding products to a kit:
 
----
+#### 📦 Validated Boundaries
 
-## ✅ Key QA Focus
+- Kit ID (existing vs non-existing)
+- Product ID (valid, invalid, non-existing)
+- `quantity` field limits
+- Structure and length of the `productsList` array
+- Maximum limit of **30 unique products per kit**
 
-- Identifying edge cases early
-- Validating system behavior at limits
-- Ensuring backend constraints are properly enforced
-- Applying test design techniques aligned with real QA workflows
+#### 🚫 Boundary Enforcement
+
+- Requests exceeding 30 unique products return:
+  ```json
+  {
+    "message": "No more than 30 items per kit"
+  }
