@@ -86,3 +86,22 @@ Boundary Value Analysis was applied to API inputs when adding products to a kit:
   {
     "message": "No mas de 30 artículos por conjunto"
   }
+- Invalid boundary inputs correctly return 400 Bad Request or 404 Not Found
+
+---
+
+## 🛠 Tools Used
+
+- Manual testing (Web UI)
+- Postman (API requests)
+- Google Sheets (test design and tracking)
+- Jira (defect reporting)
+
+---
+
+## ✅ Key QA Focus
+
+- Validation of edge cases
+- Enforcement of business rules
+- Detection of defects at boundary conditions
+- Clear separation between valid and invalid input behavior
