@@ -84,5 +84,5 @@ Boundary Value Analysis was applied to API inputs when adding products to a kit:
 - Requests exceeding 30 unique products return:
   ```json
   {
-    "message": "No more than 30 items per kit"
+    "message": "No mas de 30 artículos por conjunto"
   }
