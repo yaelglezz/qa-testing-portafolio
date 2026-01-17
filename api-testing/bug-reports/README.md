@@ -59,7 +59,7 @@ This structure mirrors real-world Jira bug reporting standards.
 
 ---
 
-🎯 Purpose
+## 🎯 Purpose
 
 These bug reports are part of my QA Tester Junior portfolio, showcasing my analytical thinking, attention to detail, and structured approach to quality assurance—especially in backend and API-focused testing.
 
