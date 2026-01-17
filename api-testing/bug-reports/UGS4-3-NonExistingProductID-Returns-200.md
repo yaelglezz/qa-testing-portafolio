@@ -57,6 +57,15 @@ This indicates incorrect validation of product IDs.
 
 This behavior violates the expected API contract for invalid identifiers and could lead to data inconsistency or downstream errors if products that do not exist are accepted.
 
+---
+
+## Screenshot Evidence
+
+### Request with Non-existing Product ID
+![Request showing invalid product ID](./screenshots/UGS4-3_request_invalid_product.png)
+
+### Incorrect API Response (Bug)
+![API returns 200 OK instead of 404](./screenshots/UGS4-3_response_200_ok.png)
 
 
    
