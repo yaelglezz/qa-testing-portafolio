@@ -53,6 +53,14 @@ This indicates incorrect validation of product IDs.
 
 ---
 
+### Severity
+High
+
+### Priority
+Medium
+
+---
+
 ## Notes
 
 This behavior violates the expected API contract for invalid identifiers and could lead to data inconsistency or downstream errors if products that do not exist are accepted.
