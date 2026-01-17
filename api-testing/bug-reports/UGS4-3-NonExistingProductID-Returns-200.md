@@ -1,10 +1,5 @@
 # Bug Report - USGS4-3: Non-existing Product ID Returns 200 OK
 
-**Project:** Urban Grocers — API Testing
-**Test Case Reference:** TC-API-NEG-002 (o el que corresponda)
-**Reported Defect ID:** UGS4-3
-Date: 2026-01-03
-
 ### **Environment:**
 
 - Postman
