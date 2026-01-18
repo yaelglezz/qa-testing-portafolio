@@ -55,6 +55,7 @@ Each bug report includes:
 - Actual Result
 - Severity & Priority
 - Evidence (screenshots or logs)
+
 This structure mirrors real-world Jira bug reporting standards.
 
 ---
