@@ -4,7 +4,7 @@
 
 - Postman
 - JSON REST API
-- Base URL: (indica tu test environment)
+- Base URL: *URL*
 - Headers: Content-Type: application/json
 
 ---
